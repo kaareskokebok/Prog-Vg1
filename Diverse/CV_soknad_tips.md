@@ -1,7 +1,4 @@
-
-Her er 10 gode tips for å lage en god CV og 10 tips for å skrive en god søknad for elever på datalinja som skal søke praksisplass:
-
-### 10 tips for en god CV:
+#### 10 tips for en god CV:
 
 1. **Kontaktinformasjon øverst**: Sørg for at navn, telefonnummer og e-postadresse er tydelig plassert øverst på CV-en.
 2. **Kortfattet oppsummering**: Inkluder en kort profil som beskriver hvem du er, hvilke interesser du har, og hva du ønsker å oppnå.
@@ -14,7 +11,7 @@ Her er 10 gode tips for å lage en god CV og 10 tips for å skrive en god søkna
 9. **Lengde på CV-en**: For en elev er det tilstrekkelig med en CV på én side, men sørg for å være presis og inkluder relevant informasjon.
 10. **Sjekk for skrivefeil**: Les gjennom CV-en nøye, eller få noen andre til å lese over den for å unngå småfeil.
 
-### 10 tips for en god søknad:
+#### 10 tips for en god søknad:
 
 1. **Tilpass søknaden til stillingen**: Les stillingsannonsen nøye og skreddersy søknaden slik at du viser hvordan du kan bidra til bedriften.
 2. **Introduksjon**: Start søknaden med å si hvem du er, hvilken praksisplass du søker på, og hvorfor du ønsker denne stillingen.
