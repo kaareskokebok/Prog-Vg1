@@ -19,9 +19,23 @@
             background-color: darkolivegreen;
             font-size: 16pt;
         }
+        /* # når det er id */
         #headerVelgeOss{
             background-color: lightgray;
             font-size: 24pt;
+        }
+        /* . når det er class */
+        .pris{
+            text-align: right;
+            font-style: italic;
+        }
+        /* To stiler for å få strek
+        under thead */
+        table {
+            border-collapse: collapse;
+        }
+        thead{
+            border-bottom: 1px solid black;
         }
     </style>
 </head>
@@ -38,7 +52,37 @@
     <p>Her er en prisoversikt</p>
 
     <table>
-        
+        <thead>
+<tr>
+    <th>Modell</th>
+    <th>Type</th>
+    <th>Pris</th>
+</tr>
+        </thead>
+        <tbody>
+<tr>
+    <td>
+        Saab
+    </td>
+    <td>
+        Diesel
+    </td>
+    <td class="pris">
+        290 000,-
+    </td>
+</tr>
+<tr>
+    <td>
+        Volvo
+    </td>
+    <td>
+        Elbil
+    </td>
+    <td class="pris">
+        95 000,-
+    </td>
+</tr>
+        </tbody>
     </table>
 
     <hr>
