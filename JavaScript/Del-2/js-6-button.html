@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Trykk på knappen for å regne ut 3 + 5</h1>
+
+    <button onclick="knappTrykket()">Regn ut</button>
+
+    <p></p>
+
+    <p id="txtUt2"></p>
+    <script>
+        function knappTrykket(){
+            // Dette skjer når knappen trykkes
+            // lager peker til DET FØRSTE p-elementet
+            let txtUt = document.querySelector("p");
+            // Endre innhold i p-elementet
+            txtUt.textContent = "3 + 5 = 8";
+            // txtUt2 p-elementet
+            let txtUt2 = document.getElementById("txtUt2");
+            txtUt2.textContent = "Ja, slik er det!";
+        }
+    </script>
+</body>
+</html>
