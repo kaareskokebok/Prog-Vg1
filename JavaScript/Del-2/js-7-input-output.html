@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input og output</title>
+</head>
+<body>
+    <h1>Hils på navn</h1>
+    <p>Skriv inn ditt navn</p>
+    <input type="text" id="inpNavn" placeholder="Ola Nordmann">
+    <button onclick="lagHilsen()">Trykk for å få hilsen</button>
+    <p id="txtUt">output</p>
+
+    <script>
+        function lagHilsen(){
+            let navn = document.getElementById("inpNavn").value;
+            let txtUt = document.getElementById("txtUt");
+            txtUt.textContent = "Hei, " + navn;
+        }
+    </script>
+</body>
+</html>
