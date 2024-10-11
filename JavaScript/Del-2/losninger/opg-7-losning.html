@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Input og output</title>
+</head>
+<body>
+    <h1>Hils på navn</h1>
+    <p>Skriv inn ditt fornavn</p>
+    <input type="text" id="inpFornavn" placeholder="Ola">
+    <!-- TODO: Lag et p element med instruks om å skrive inn etternavn -->
+     <p>Etternavn: </p>
+
+    <!-- TODO: Lag et input felt med id inpEtternavn -->
+    <input type="text" id="inpEtternavn" placeholder="Johansen">
+
+    <button onclick="lagHilsen()">Trykk for å få hilsen</button>
+    <p id="txtUt">output</p>
+
+    <script>
+        function lagHilsen(){
+            let fornavn = document.getElementById("inpFornavn").value;
+            // TODO: lag en variabel etternavn, og hent value fra input-feltet med etternavn
+            let etternavn = document.getElementById("inpEtternavn").value;
+            let txtUt = document.getElementById("txtUt");
+            // TODO: Endre koden nedenfor slik at både fornavn og etternavn skrives ut, f.eks. Hei, Per Johansen! Hyggelig å se deg!
+            txtUt.textContent = "Hei, " + fornavn + " " + etternavn;
+        }
+    </script>
+</body>
+</html>

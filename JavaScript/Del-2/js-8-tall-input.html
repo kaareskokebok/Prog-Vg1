@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input, button{
+            width:60px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Enkel gange kalk</h1>
+
+    <p>Instruks: Skriv inn to tall, trykk = for å regne ut</p>
+
+    <input type="number" id="inpTall1"> 
+    <input type="number" id="inpTall2"> 
+    <button onclick="gangSammen()">=</button>
+    <p id="txtUt"></p>
+
+    <script>
+        function gangSammen() {
+        // Les inn tallene, lagre i variabler
+        let tall1 = Number(document.getElementById("inpTall1").value);
+        let tall2 = Number(document.getElementById("inpTall2").value);
+
+        // Regn ut gangestykket
+        let produkt = tall1 * tall2;
+
+        // Skriv ut svaret
+        let txt = tall1 + " * " + tall2 + " = " + produkt;
+        document.getElementById("txtUt").textContent = txt;
+    }
+    </script>
+</body>
+</html>
