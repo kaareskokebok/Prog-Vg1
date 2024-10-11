@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            height: 100%;
+        }
+        img{
+            width: 50px;
+            position: absolute;
+            top:30%;
+            left:20%;
+            animation: all;
+            transition: 0.2s;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trykk på Jonas</h1>
+    <img onclick="jonasSkutt()" src="./assets/images/prime.webp" alt="Jonas S.">
+
+    <p></p>
+
+    <p id="txtUtTimer"></p>
+    <script>
+        let poeng = 0;
+        let txtUt = document.querySelector("p");
+        let jonasBilde = document.querySelector("img");
+
+        let txtUtTimer = document.getElementById("txtUtTimer");
+
+        let sekunder = 0;
+        // 5 treff så raskt som  mulig -> game over
+
+        function jonasSkutt(){
+            if (poeng == 5){
+                return;  // avslutt funksjonen
+            }
+            // Skytelyd
+            var lyd = new Audio("./assets/sounds/shoot.mp3");
+            lyd.play();
+
+            // Øke antall poeng
+            poeng++; // poeng = poeng + 1 
+            txtUt.textContent = "Poeng: " + poeng;
+
+            // Sette ny posisjon med tilfeldige verdier
+            let topVerdi = Math.random()*80;  // 0 - 80
+            let leftVerdi = Math.random()*80;
+            jonasBilde.style.top = topVerdi + "%";
+            jonasBilde.style.left = leftVerdi + "%";
+
+            if (poeng == 5) {
+                txtUt.textContent = "Game over";
+                // Stopp timer
+                clearInterval(minTimer);
+            }
+        }
+
+        function myInterval() {
+            // Utføres hver tiendedels sekund
+            sekunder+= 0.1;
+            txtUtTimer.textContent = "Tid: " + sekunder.toFixed(1) + " sek.";
+        }
+
+        let minTimer = setInterval(myInterval, 100); // hvert tiende dels sekund
+    </script>
+</body>
+</html>
