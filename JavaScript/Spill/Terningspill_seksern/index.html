@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 
+    Når du trykker på knappen, kaster programmet en terning.
+    Du får vite hvor mange øyne du får. Hvis du får sekser, får du også et HURRA! -->
+    <h1>Kast terningen</h1>
+
+    <button onclick="kast()">Kast</button>
+    <p id="txtUt"></p>
+
+    <script>
+        let txtUt = document.getElementById("txtUt");
+
+        function kast(){
+            // Dette skjer når knappen trykkes
+            // 1. Tilfeldig kast
+            // TODO: FINN UT: hvordan lage et tilfeldig heltall 1-6 i JavaScript
+            let kast = Math.floor(Math.random() * 6) + 1;
+
+            txtUt.textContent = `Du fikk en ${kast}-er.`;
+
+            if (kast == 6) {
+                txtUt.textContent += " HURRA!";
+            }
+        }
+    </script>
+</body>
+</html>

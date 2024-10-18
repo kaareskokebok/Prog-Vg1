@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Gjett tallet</h1>
+    <p>Et tall er mellom 0 og 100</p>
+    <input id="inpGjett" type="number" placeholder="39">
+    <button onclick="sjekkTallet()">Sjekk tallet</button>
+    <p id="txtUt"></p>
+
+    <script>
+        function sjekkTallet(){
+            // Øk antall forsøk med 1
+            antallForsok++;
+
+            let gjettTall = Number(inpGjett.value);
+
+            // Sammenlign med secretNumber og gi tilbakemelding
+            if (gjettTall < secretNumber) {
+                txtUt.textContent = "Du gjettet for lavt!";
+            }
+            else if (gjettTall > secretNumber ) {
+                txtUt.textContent = "Du gjettet for høyt!";
+            }
+            else {
+                txtUt.textContent = `Riktig! Du brukte ${antallForsok} forsøk.`;
+            }
+            
+        }
+
+        let inpGjett = document.getElementById("inpGjett");
+        let txtUt = document.getElementById("txtUt");
+        // 1-100
+        let secretNumber = Math.floor(Math.random() * 100) + 1; 
+        // Antall forsøk
+        let antallForsok = 0;
+    </script>
+</body>
+</html>
