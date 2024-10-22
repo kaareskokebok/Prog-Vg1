@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 300px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Flervalgsquiz</h1>
+
+    <img src="https://tinyurl.com/klausern" alt="">
+    <p>Hva er fornavnet til personen på bildet?</p>
+    <input type="radio" id="svar1" name="svarSpm1" value="Klaus">
+    <label for="svar1">Klaus</label><br>
+
+    <input type="radio" id="svar2" name="svarSpm1" value="Jens">
+    <label for="svar2">Jens</label><br>
+
+    <input type="radio" id="svar3" name="svarSpm1" value="Klara">
+    <label for="svar3">Klara</label><br>
+
+    <button onclick="sjekkSvar()">Sjekk svar</button>
+
+    <p id="txtUt"></p>
+    <script>
+        function sjekkSvar(){
+            // Les inn fra radiobutton med navn svarSpm1
+            // Forklaring: finn første input element med 
+            // navn svarSpm1 som er checked (valgt), og hent ut 
+            // verdien (value) til dette elementet
+            let svar = document.querySelector('input[name="svarSpm1"]:checked').value;
+            let fasit = "Klaus";
+
+            if (svar === fasit) {
+                txtUt.textContent = "Korrekt";
+            }else{
+                txtUt.textContent = "Feil! Har du ikke hørt om Klaus Schwab, grunnleggeren av WEF?";
+            }
+        }
+
+
+    </script>
+   
+</body>
+</html>
