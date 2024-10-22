@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Geografi quiz</h1>
+
+    <p>Hva kalles det høyeste fjellet på Dovrefjell?</p>
+    <input type="text" id="inpSvar1">
+
+    <!-- TODO 1: Legg til et spm. til, f.eks. Høyeste topp i Akershus. Fjellsjøkampen (i Hurdal).
+     Bruk id inpSvar2 på input -->
+
+    <button onclick="sjekkSvar()">Sjekk svar</button>
+
+    <p id="txtUt"></p>
+
+    <script>
+        function sjekkSvar(){
+            let poeng = 0;  // Øk poeng med 1 for hvert riktig svar
+            // Les inn svar
+            let svar1 = inpSvar1.value;
+            // Sjekk svar mot fasit
+            if (svar1 == fasit1) {
+                // Dette skjer hvis riktig svar
+                // Øk poeng med 1
+            }
+            // TODO les inn svar2
+            // Sjekk svar2 mot fasit2
+            // Øk poeng med 1 hvis riktig
+
+            // Gi tilbakemelding med antall poeng og fasitsvarene
+        }
+        // Lag fasit2 med verdien "Fjellsjøkampen"
+        let fasit1 = "Snøhetta";
+        let inpSvar1 = document.getElementById("inpSvar1");
+        let txtUt = document.getElementById("txtUt");
+    </script>
+    
+</body>
+</html>
