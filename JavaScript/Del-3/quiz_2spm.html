@@ -13,6 +13,8 @@
 
     <!-- TODO 1: Legg til et spm. til, f.eks. Høyeste topp i Akershus. Fjellsjøkampen (i Hurdal).
      Bruk id inpSvar2 på input -->
+    <p>Hva kalles det høyeste fjellet i Akerhus?</p>
+    <input type="text" id="inpSvar2">
 
     <button onclick="sjekkSvar()">Sjekk svar</button>
 
@@ -27,17 +29,32 @@
             if (svar1 == fasit1) {
                 // Dette skjer hvis riktig svar
                 // Øk poeng med 1
+                poeng++;
             }
             // TODO les inn svar2
+            let svar2 = inpSvar2.value;
             // Sjekk svar2 mot fasit2
-            // Øk poeng med 1 hvis riktig
-
+            if (svar2 == fasit2){
+                 // Øk poeng med 1 hvis riktig
+                 poeng++;
+            }
+           
             // Gi tilbakemelding med antall poeng og fasitsvarene
+            let resultat = `Du fikk ${poeng} av 2 mulige. Riktige svar var:
+            <ol>
+                <li>${fasit1}</li>
+                <li>${fasit2}</li>
+            </ol>
+            `;
+            txtUt.innerHTML = resultat;
         }
+        
         // Lag fasit2 med verdien "Fjellsjøkampen"
         let fasit1 = "Snøhetta";
+        let fasit2 = "Fjellsjøkampen";
         let inpSvar1 = document.getElementById("inpSvar1");
         let txtUt = document.getElementById("txtUt");
+
     </script>
     
 </body>
