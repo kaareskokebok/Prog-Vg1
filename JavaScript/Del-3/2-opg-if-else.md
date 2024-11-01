@@ -73,3 +73,4 @@ Skriv et program som tar inn en måned (som tall 1-12) fra brukeren og bruker if
 
 Lag et program der brukeren skal gjette et tilfeldig generert tall mellom 1 og 20. Brukeren har 5 liv. For hvert feil svar mister brukeren ett liv. Bruk if, else if og else for å gi tilbakemelding om gjetningen er for høy eller for lav, og om brukeren har mistet alle livene.
 
+
