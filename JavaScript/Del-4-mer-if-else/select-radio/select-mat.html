@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Reiduns Restaurant</h1>
+    <h3>Velg forrett:</h3>
+    <select id="selForrett">
+        <option value="Blomkålsuppe">Blomkålsuppe</option>
+        <option value="Fiskesuppe">Fiskesuppe</option>
+        <option value="Pekingsuppe">Pekingsuppe</option>
+    </select>
+
+    <h3>Velg hovedrett:</h3>
+
+    <h3>Velg dessert:</h3>
+    
+    <button onclick="bestill()">Bestill mat</button>
+    <p id="txtUt"></p>
+
+    <script>
+        function bestill() {
+            let forrett = selForrett.value;
+            // TODO hovedrett og dessert
+
+            let txt = `Du har bestilt følgende:
+            <ul>
+                <li>Forrett: ${forrett}</li>
+                <li>Hovedrett: </li>
+                <li>Dessert: </li>
+                </ul>
+            Smaka måltid!`;
+            txtUt.innerHTML = txt;
+
+        }
+
+        let txtUt = document.getElementById("txtUt");
+        let selForrett = document.getElementById("selForrett");
+    </script>
+</body>
+</html>
