@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Spørreskjema</h1>
+
+    <form id="sporreskjema">
+        <label for="inpNavn">Navn:</label>
+        <input type="text" id="inpNavn">
+        <br>
+        <label for="inpAlder">Alder:</label>
+        <input type="number" id="inpAlder">
+        <br>
+        <label for="selFavfarge">Favorittfarge:</label>
+        <br>
+        <select id="selFavfarge">
+            <option value="gul">gul</option>
+            <option value="rød">rød</option>
+            <option value="grønn">grønn</option>
+            <option value="blå">blå</option>
+        </select>
+
+        <p>Kjønn:</p>
+        <input type="radio" name="radKjonn" value="mann" id="radMann">
+        <label for="radMann">Mann</label>
+        <br>
+        <input type="radio" name="radKjonn" value="kvinne" id="radKvinne">
+        <label for="radKvinne">Kvinne</label>
+        <br>
+        <input type="submit" value="Send">
+    </form>
+
+    <p id="txtUt"></p>
+
+</body>
+</html>
