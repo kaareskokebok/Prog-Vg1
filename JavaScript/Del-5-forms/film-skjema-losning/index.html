@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Filmtilbakemelding</h1>
+
+    <form id="filmTilbakemelding">
+        <label for="inpNavn">Navn:</label>
+<input type="text" id="inpNavn" value="jensern">
+<br>
+<label for="inpAlder">Alder:</label>
+<input type="number" id="inpAlder" value="25">
+
+<label for="selSjanger">Velg filmens sjanger:</label>
+<select id="selSjanger">
+    <option value="Action">Action</option>
+    <option value="Komedie">Komedie</option>
+    <option value="Drama" selected>Drama</option>
+    <option value="Skrekk">Skrekk</option>
+    <option value="Animasjon">Animasjon</option>
+</select>
+
+<p>Vurder filmen:</p>
+<input type="radio" name="radVurdering" value="1" id="stjerne1">
+<label for="stjerne1">1 stjerne</label>
+<br>
+<input type="radio" name="radVurdering" value="2" id="stjerne2">
+<label for="stjerne2">2 stjerner</label>
+<br>
+<input type="radio" name="radVurdering" value="3" id="stjerne3" checked>
+<label for="stjerne3">3 stjerner</label>
+<br>
+<input type="radio" name="radVurdering" value="4" id="stjerne4">
+<label for="stjerne4">4 stjerner</label>
+<br>
+<input type="radio" name="radVurdering" value="5" id="stjerne5">
+<label for="stjerne5">5 stjerner</label>
+
+<label for="txtKommentar">Kommentar:</label>
+<br>
+<textarea id="txtKommentar" rows="4" cols="50">Filmen var kul, men savnet noe romantikk.</textarea>
+
+<br>
+<input type="submit" value="Send inn">
+
+    </form>
+
+    <p id="txtUt"></p>
+</body>
+</html>
