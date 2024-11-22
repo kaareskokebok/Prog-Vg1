@@ -4,7 +4,20 @@ function bestill(event) {
     //  document.getElementById("txtUt").textContent = "test";
     // Registrer bestillingsdata
     let antall = Number(document.getElementById("inpAntall").value);
-    let 
+    let str = document.getElementById("selSize").value;
+    let drikke = document.querySelector('input[name="radDrikke"]:checked').value;
+
+    // Lag bekreftelsestekst
+    let txt = `<h3>Din bestilling</h3>
+    <ul>
+    <li>Antall burgere: ${antall}</li>
+    <li>Størrelse: ${str}</li>
+    <li>Drikke: ${drikke}</li>
+    </ul>
+    <hr>
+    <p>Håper maten smaker, velkommen tilbake!</p>
+    `;
+    document.getElementById("txtUt").innerHTML = txt;
 }
 
 let skjema = document.getElementById("skjema");
