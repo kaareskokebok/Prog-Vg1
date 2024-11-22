@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="no">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,13 +17,15 @@
 
     <form id="skjema">
         <label for="inpAntall">Velg antall burgere:</label> <br>
-        <input type="number" id="inpAntall"><br>
-        <select  id="selSize">
+        <input type="number" id="inpAntall" required min="1" max="10"><br>
+        <select  id="selSize" required>
+            <option value="">Velg størrelse</option>
             <option value="liten">Liten</option>
             <option value="medium">Medium</option>
             <option value="stor">Stor</option>
         </select><br>
-        <input type="radio" name="radDrikke" id="radCola"><label for="radCola">Cola</label>
+        
+        <input type="radio" name="radDrikke" id="radCola" required><label for="radCola">Cola</label>
         <input type="radio" name="radDrikke" id="radSprite"><label for="radSprite">Sprite</label> 
         <input type="radio" name="radDrikke" id="radFanta"><label for="radFanta">Fanta</label><br>
 
