@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        img{
+            width: 250px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Bernts Burger</h1>
+    <img src="https://cdn.pixabay.com/photo/2020/10/05/19/55/hamburger-5630646_960_720.jpg" alt="burger bilde">
+
+    <form id="skjema">
+        <label for="inpAntall">Velg antall burgere:</label> <br>
+        <input type="number" id="inpAntall"><br>
+        <select  id="selSize">
+            <option value="liten">Liten</option>
+            <option value="medium">Medium</option>
+            <option value="stor">Stor</option>
+        </select><br>
+        <input type="radio" name="radDrikke" id="radCola"><label for="radCola">Cola</label>
+        <input type="radio" name="radDrikke" id="radSprite"><label for="radSprite">Sprite</label> 
+        <input type="radio" name="radDrikke" id="radFanta"><label for="radFanta">Fanta</label><br>
+
+        <input type="submit" value="Bestill">
+    </form>
+
+    <p id="txtUt"></p>
+</body>
+</html>
