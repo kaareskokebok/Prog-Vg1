@@ -21,7 +21,7 @@ Lag et skjema der brukere kan registrere seg for et nyhetsbrev. Skjemaet skal in
     - De valgte interessene.
     - Det foretrukne formatet.
 - Hvis ingen interesser er valgt, vis en melding som ber brukeren velge minst én interesse.
-
+- Hvis brukeren velger HTML, skal du formatere utskriften ved hjelp av HTML. Bruk da backticks og ${}. Ellers gi utskriften i ren tekst.
 ---
 
 **Oppgave 2: Bestillingsskjema for pizzalevering**
