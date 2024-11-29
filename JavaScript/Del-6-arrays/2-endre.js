@@ -17,3 +17,4 @@ console.log(tall);
 // 3. Endre det 2. tallet til å bli det dobbelte av det
 // 4. tallet
 // 5. Øk det 2. tallet med 1
+tall = []
