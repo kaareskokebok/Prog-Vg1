@@ -14,7 +14,24 @@
     <p></p>
 
     <script>
-        
+function leggTilVenn(){
+    let navn = document.getElementById("inpNavn").value;
+    // Bruk push for å legge til
+    venner.push(navn);
+    let txt = `Din venn ${navn} ble lagt til.`;
+    document.querySelector("p").textContent = txt;
+}
+
+function visVenner() {
+    let txt = `<h3>Dine venner</h3>
+    ${venner.join(", ")}`;
+    document.querySelector("p").innerHTML = txt;
+}
+
+let venner = ["jens", "arne"];
+document.getElementById("btnLeggTilVenn").addEventListener("click", leggTilVenn);
+document.getElementById("btnVisVenner").addEventListener("click", visVenner);
+
     </script>
 </body>
 </html>
