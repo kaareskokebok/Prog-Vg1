@@ -21,3 +21,9 @@ console.log(venner[3]);  // undefined
 // Skriv ut det 2. og det 4. tallet
 // Skriv ut venner[i] der i byttes ut med et tall slik at
 // du får undefined i console.log
+let tall = [1, 234, 345, 123];
+console.log(tall);
+console.log(tall[1]);  // 234
+console.log(tall[3]);  // det 4.tallet, 123
+console.log(tall[5]);
+
