@@ -13,30 +13,30 @@
      en oversikt over dine favorittfilmer. -->
      
     <!-- SKRIV AV DETTE! -->
-    <h1>Mine venner</h1>
+    <h1>Mine filmer</h1>
     <input type="text" id="inpNavn">
-    <button id="btnLeggTilVenn">Legg til venn</button>
-    <button id="btnVisVenner">Vis venner</button>
+    <button id="btnLeggTilFilm">Legg til film</button>
+    <button id="btnVisFilmer">Vis filmer</button>
     <p></p>
 
     <script>
-function leggTilVenn(){
-    let navn = document.getElementById("inpNavn").value;
+function leggTilFilm(){
+    let film = document.getElementById("inpNavn").value;
     // Bruk push for å legge til
-    venner.push(navn);
-    let txt = `Din venn ${navn} ble lagt til.`;
+    filmer.push(film);
+    let txt = `Din film ${film} ble lagt til.`;
     document.querySelector("p").textContent = txt;
 }
 
-function visVenner() {
-    let txt = `<h3>Dine venner</h3>
-    ${venner.join(", ")}`;
+function visFilmer() {
+    let txt = `<h3>Dine filmer</h3>
+    ${filmer.join(", ")}`;
     document.querySelector("p").innerHTML = txt;
 }
 
-let venner = ["jens", "arne"];
-document.getElementById("btnLeggTilVenn").addEventListener("click", leggTilVenn);
-document.getElementById("btnVisVenner").addEventListener("click", visVenner);
+let filmer = ["Top Gun", "Sphere", "Patrio"];
+document.getElementById("btnLeggTilFilm").addEventListener("click", leggTilFilm);
+document.getElementById("btnVisFilmer").addEventListener("click", visFilmer);
 
     </script>
 </body>
