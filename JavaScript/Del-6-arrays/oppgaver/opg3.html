@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Handlekurv</h1>
+    <label for="inpVare">Varenavn:</label>
+    <input type="text" id="inpVare"><br>
+
+    <button id="btnLeggTil">Legg til</button>
+    <button id="btnVisKurv">Vis handlekurv</button>
+    <p></p>
+    <script>
+
+        function leggTil(){
+            let vare = inpVare.value;
+            varer.push(vare);
+
+            document.querySelector("p").textContent = "Vare lagt til";
+        }
+
+        function visKurv(){
+            let txt = varer.join("<br>");
+            document.querySelector("p").innerHTML = txt;
+        }
+        let inpVare = document.getElementById("inpVare");
+        let btnVisKurv = document.getElementById("btnVisKurv");
+        
+        document.getElementById("btnLeggTil").addEventListener("click", leggTil);
+        document.getElementById("btnVisKurv").addEventListener("click", visKurv);
+
+        let varer = ["eple", "melk", "ost"];
+    </script>
+    <!-- ### Oppgave 3: Handlekurv med varer
+**Beskrivelse:**
+Eleven skriver inn et varenavn i et tekstfelt og trykker "Legg i handlekurv". Varen legges da til i en array. Når eleven er ferdig, trykker de på "Vis handlekurv", og alle varene listes ut på siden. Deretter kan man trykke "Tøm kurv" for å fjerne alt fra arrayen og fra visningen.
+
+**Krav:**
+- Ett `<input>` for varenavn.
+- Knapper: "Legg i handlekurv", "Vis handlekurv", "Tøm kurv".
+- Et array for varene.
+- Når "Vis handlekurv" trykkes, vis en liste med varer under.
+- Når "Tøm kurv" trykkes, rydd opp i både array og visning. -->
+</body>
+</html>

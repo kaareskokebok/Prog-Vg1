@@ -27,3 +27,10 @@ console.log(tall[1]);  // 234
 console.log(tall[3]);  // det 4.tallet, 123
 console.log(tall[5]);
 
+if (true) {
+    var navn = "jens";
+    let navn2 = "per";
+}
+console.log(navn);
+console.log(navn2);
+
