@@ -96,7 +96,7 @@ function registerUser() {
 
 <h1>Logg inn (delvis)</h1>
 
-<input type="text" id="loginUsername" placeholder="Brukernavn"><br><br>
+<input tasdf="text" id="loginUsername" placeholder="Brukernavn"><br><br>
 <input type="password" id="loginPassword" placeholder="Passord"><br><br>
 <button onclick="login()">Logg inn</button>
 

@@ -1,0 +1,8 @@
+nav a{
+    text-decoration: none;
+    color:black;
+    transition: 0.3s;
+}
+nav li:hover,a:hover{
+    color:brown;
+}
