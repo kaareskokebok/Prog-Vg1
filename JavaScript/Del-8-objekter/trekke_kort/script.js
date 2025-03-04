@@ -6,6 +6,7 @@ let ordbok = {
     "DIAMONDS":"ruter",
     "CLUBS":"kløver"
 };
+
 async function startGame() {
     try {
         // 1. Request a new, shuffled deck
