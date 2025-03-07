@@ -6,11 +6,12 @@ function sjekkSvar(event) {
         // Sjekk mot fasit
         if ( brukersvar === spm1.svar ) {
             txtUt.textContent = "Riktig!";
-            level++;
-            nesteSpm();
+            // TODO: oppdater poeng
         }else {
             txtUt.textContent = `Feil! Rett svar er ${spm1.svar}`;
         }
+        level++;
+        nesteSpm();
     }
 }
 
@@ -25,9 +26,7 @@ function nesteSpm(){
         // Endre spm1 sitt spm og svar til ditt eget spørsmål
     } else if (level === 4) {
         // Gi tilbakemelding: Quiz ferdig.
-
-        // EXTRA:
-        // Tell poeng. Du får bare poeng hvis du svarer rett første gang.
+        // Vis poengene og gi tilpasset tilbakemelding. 
     }
 }
 // level 1, du er på spm 1
