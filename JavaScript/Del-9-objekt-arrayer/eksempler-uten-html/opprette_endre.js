@@ -43,7 +43,12 @@ ansatteArray[2].lonn += 5000;
 
 // Oppgaver
 // 1. endre pers navn til jens
+ansatteArray[1].navn = 'jens';
 // 2. jens sin lønn skal være 860 000 kr
+ansatteArray[1].lonn = 860000;
 // 3. alis lønn øker med 65000 (BRUK +=)
+ansatteArray[0].lonn += 65000;
 // 4. saras lønn minker med 38000 ( BRUK -= )
+ansatteArray[2].lonn -= 38000;
 // 5. Bruk console.log for å skrive ut alt i ansatteArray
+console.log(ansatteArray);
