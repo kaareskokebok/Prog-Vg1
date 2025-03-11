@@ -1,3 +1,4 @@
+// https://github.com/kaareskokebok/Prog-Vg1/tree/main/JavaScript/Del-8-objekter/quiz
 function sjekkSvar(event) {
     // Sjekk om ENTER ble trykket
     if(event.key === "Enter") {
