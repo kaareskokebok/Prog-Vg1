@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bernts Biler</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Bernts Biler</h1>
+    <br>
+    <label for="inpBilmerke">Bilmerke:</label><br>
+    <input type="text" id="inpBilmerke">
+    <button id="btnOversikt">Vis Oversikt</button>
+    <button id="btnSelg">Selg bil</button>
+    <button id="btnSok">Søk bil</button>
+    <button id="btnFjern">Fjern bil</button>
+
+    <button id="btnNyBil">Legg til ny bil</button>
+
+    <div id="nyBilContainer" class="skjul">
+        <form id="formNyBil">
+            <label for="inpNyBilMerkel">Merke:
+            </label><br>
+            <input type="text" id="inpNyBilMerke" required><br>
+            <label for="inpPris">Pris:
+            </label><br>
+            <input type="text" id="inpPris"><br>
+            <label for="inpAar">Årsmodell:
+            </label><br>
+            <input type="text" id="inpAar"><br>
+
+            <input type="submit" value="Legg til bil">
+        </form>
+    </div>
+    <div id="bilerContainer"></div>
+    <!-- Flere funksjoner
+     0. Lage oversikt
+     1. Selge en bil ved å skrive i søkefelt, eller velge fra liste. Bilen forsvinner ut fra biler i javascript.
+     2. Søke etter en bestemt bil for å mer informasjon
+     3. Legge til ny bil (uten bilde).
+     4. Fjerne en bil
+     5.  -->
+</body>
+</html>
