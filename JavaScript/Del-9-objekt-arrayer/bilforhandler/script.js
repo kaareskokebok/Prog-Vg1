@@ -4,6 +4,13 @@ function selgBil(){
     // 2. Sjekk at bilmerke finnes
     if (finnesBil(merke)) {
         alert("Bilen finnes!");
+        // Fjerne, bruk splice
+        for(let i=0; i<biler.length;i++) {
+            if (merke === biler[i].merke) {
+                biler.splice(i, 1);
+                break; // Avslutt løkka
+            }
+        }
     }else{
         alert("Bilen finnes ikke!");
     }
